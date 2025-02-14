@@ -11,9 +11,8 @@ export async function delay(ms: number) {
       const expires = "expires="+ d.toUTCString();
       document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
     }
-    catch(error)
-    {
-      console.log(error);
+    catch{
+        //handle error
     }
     
   }
@@ -34,8 +33,7 @@ export async function delay(ms: number) {
     }
     return "";
       
-    } catch (error) {
-      console.log(error);
+    } catch{
       return "";
       
     }
