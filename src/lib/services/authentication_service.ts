@@ -92,7 +92,6 @@ export class AuthenticationService extends BaseService{
             }
             else
             {
-                console.log('cookie found')
                 this.refreshToken(cookie);
             }
         }

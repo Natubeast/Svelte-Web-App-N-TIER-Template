@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import 'tailwindcss';
+
+
+
+:root {
+    /* Colors */
+    --black: #171717;            /* Nearly black - for main text and dark elements */
+    --white: #FFFFFF;            /* Pure white - for backgrounds and contrast */
+    --primary-color: #cca0f7;
+    --background-color: var(--white);
+    --text-primary: var(--black);
+    --text-secondary: var(--gray-700);
+
+    /* Supporting Colors */
+    --gray-50: #F9FAFB;         /* Lightest gray - for subtle backgrounds */
+    --gray-100: #F3F4F6;        /* Light gray - for hover states */
+    --gray-200: #E5E7EB;        /* For borders */
+    --gray-700: #374151;        /* For secondary text */
+    
+  
+    /* Font families */
+    --font-primary: 'Raleway', sans-serif;
+    --font-secondary: 'Playfair Display', serif;
+  
+    /* Font sizes */
+    --font-size-small: 0.875rem;
+    --font-size-medium: 1rem;
+    --font-size-large: 1.25rem;
+  
+    /* Spacing */
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: var(--font-primary);
+    color: var(--text-primary);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+  }

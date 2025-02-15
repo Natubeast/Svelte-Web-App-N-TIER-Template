@@ -30,7 +30,7 @@ const mockedProvider = vi.fn().mockImplementation(() => ({
       expect(result.success).toBe(true);
       expect(result.authModel).toBeInstanceOf(AuthenticationModel);
       expect(result.authModel?.authenticatedUser?.userId).toBe('user123');
-      expect(result.authModel?.authenticatedUser?.userName).toBe('John Doe');
+      expect(result.authModel?.authenticatedUser?.userName).toBe('Samantha Candace');
       // ... other assertions for other properties
     });
   
@@ -52,7 +52,7 @@ const mockedProvider = vi.fn().mockImplementation(() => ({
       expect(result.success).toBe(true);
       expect(result.authModel).toBeInstanceOf(AuthenticationModel);
       expect(result.authModel?.authenticatedUser?.userId).toBe('user123');
-      expect(result.authModel?.authenticatedUser?.userName).toBe('John Doe');
+      expect(result.authModel?.authenticatedUser?.userName).toBe('Samantha Candace');
     });
     
   });

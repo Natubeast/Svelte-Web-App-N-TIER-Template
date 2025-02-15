@@ -2,11 +2,11 @@
     "result": true,
     "data": {
       "user_id": "user123",
-      "user_name": "John Doe",
-      "user_surname": "Doe",
-      "user_gender": "Male",
+      "user_name": "Samantha Candace",
+      "user_surname": "Walker",
+      "user_gender": "Female",
       "token": "1c6c9cae-3152-4bb7-b9d0-af8d2f903c2f",
-      "expires_at": "2024-11-18 14:31:10.850818+00:00"
+      "expires_at": "2025-11-18 14:31:10.850818+00:00"
     }
     
 }
