@@ -1,0 +1,20 @@
+name: Build and Run Tests
+run-name: ${{ github.actor }} has made a change to a branch 🚀
+on: 
+  push:
+    branches: [master]
+  pull_request:
+    branches: ['**']
+jobs:
+  Build-And-Test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+      - name: Install Dependencies
+        run: npm install
+      - name: Run eslint
+        run: npx eslint
+      - name: Run Tests
+        run: npm test
