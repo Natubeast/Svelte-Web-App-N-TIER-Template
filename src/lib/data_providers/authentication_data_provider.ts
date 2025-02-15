@@ -5,7 +5,7 @@ export class AuthenticationDataProvider {
     async login(username: string, password: string): Promise<APIResponseType> {
         //Simulate API Call
         console.log(`Logging in ${username} with ${password}  `);
-        await wait(1000);
+        await wait(200);
         const data: APIResponseType = loginResponse;
         if (data.error != undefined) {
             throw Error(data.error);
@@ -15,7 +15,7 @@ export class AuthenticationDataProvider {
 
     async refreshToken(token: string): Promise<APIResponseType> {
         console.log(`Refreshing token ${token}`);
-        await wait(1000);
+        await wait(200);
         const data: APIResponseType = loginResponse;
         if (data.error != undefined) {
             throw Error(data.error);

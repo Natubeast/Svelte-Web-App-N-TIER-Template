@@ -4,6 +4,7 @@ import { authState} from "$lib/stores/state_store";
 import { getCookie, isWithin15Minutes, setCookie } from "$lib/utils/nice_utils";
 import { get } from "svelte/store";
 import { BaseService } from "./base_service";
+import type { Cookies } from "@sveltejs/kit";
 
 export class AuthenticationService extends BaseService{
 
@@ -96,6 +97,18 @@ export class AuthenticationService extends BaseService{
             }
         }
 
+    }
+
+    checkAuthServerSide(cookies: Cookies): boolean
+    {
+        let isAuthenticated = false;
+
+        const token = cookies.get("token");
+        if(token != undefined)
+            {
+                isAuthenticated = true;
+            }
+        return isAuthenticated;
     }
     
 }
