@@ -7,11 +7,6 @@
 	import { get } from "svelte/store";
 
   const unsubscribe = authState.subscribe(() => handleAuthStateChange());
-    
-
-    
-
-
 
     function handleAuthStateChange() {
     if(get(authState) instanceof AuthSuccessState)
